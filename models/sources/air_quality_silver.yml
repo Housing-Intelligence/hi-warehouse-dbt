@@ -1,0 +1,165 @@
+
+version: 2
+
+sources:
+  - name: air_quality_union
+    database: housing_intelligence
+    schema: processed
+
+    tables:
+      - name: air_quality_silver
+
+        columns:
+          # Data source
+          - name: source
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - accepted_values:
+                  arguments:
+                    values: ['AQICN']
+                  config:
+                    severity: warn
+
+          # Location information
+          - name: location_type
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - accepted_values:
+                  arguments:
+                    values: ['STATION']
+                  config:
+                    severity: warn
+
+          - name: location_id
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+
+          - name: station_name
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+
+          # Geographic coordinates
+          - name: latitude
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - dbt_utils.expression_is_true:
+                  arguments:
+                    expression: "BETWEEN -90 AND 90"
+                  config:
+                    severity: warn
+
+          - name: longitude
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - dbt_utils.expression_is_true:
+                  arguments:
+                    expression: "BETWEEN -180 AND 180"
+                  config:
+                    severity: warn
+
+          # Measurement timestamp
+          - name: measurement_time
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+
+          # Air Quality Index
+          - name: aqi
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - assert_non_negative:
+                  config:
+                    severity: warn
+
+          # Dominant pollutant
+          - name: dominant_pollutant
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - accepted_values:
+                  arguments:
+                    values:
+                      - pm25
+                      - pm10
+                      - no2
+                      - o3
+                      - so2
+                      - co
+                  config:
+                    severity: warn
+
+          # Pollutant concentrations
+          - name: pm25
+            data_tests:
+              - assert_non_negative:
+                  config:
+                    severity: warn
+
+          - name: pm10
+            data_tests:
+              - assert_non_negative:
+                  config:
+                    severity: warn
+
+          - name: no2
+            data_tests:
+              - assert_non_negative:
+                  config:
+                    severity: warn
+
+          - name: o3
+            data_tests:
+              - assert_non_negative:
+                  config:
+                    severity: warn
+
+          - name: so2
+            data_tests:
+              - assert_non_negative:
+                  config:
+                    severity: warn
+
+          - name: co
+            data_tests:
+              - assert_non_negative:
+                  config:
+                    severity: warn
+
+          # Data lineage
+          - name: _source_file
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+
+          - name: _ingest_timestamp
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+
+        data_tests:
+          - dbt_utils.unique_combination_of_columns:
+              arguments:
+                combination_of_columns:
+                  - source
+                  - location_id
+                  - measurement_time
+              config:
+                severity: warn
