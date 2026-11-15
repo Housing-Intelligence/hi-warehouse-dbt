@@ -1,0 +1,91 @@
+
+version: 2
+
+sources:
+  - name: dim_data
+    database: housing_intelligence
+    schema: processed
+
+    tables:
+      - name: dim_poi
+        description: "Points of interests in Beijing"
+
+        columns:
+          - name: source_poi_id
+            description: "Unique POI identifier from the original data provider"
+            data_tests:
+              - not_null
+              - unique
+
+          - name: poi_name
+            description: "Name of the point of interest"
+            data_tests:
+              - not_null
+
+          - name: major_category
+            description: "Top-level POI category"
+            data_tests:
+              - not_null
+
+          - name: middle_category
+            description: "Middle-level POI category"
+            data_tests:
+              - not_null
+
+          - name: minor_category
+            description: "Detailed POI category"
+            data_tests:
+              - not_null
+
+          - name: province
+            description: "Province or municipality"
+            data_tests:
+              - not_null
+
+          - name: city
+            description: "City code"
+            data_tests:
+              - not_null
+
+          - name: district
+            description: "Administrative district"
+            data_tests:
+              - not_null
+
+          - name: longitude
+            description: "Geographic longitude"
+            data_tests:
+              - not_null
+              - dbt_utils.expression_is_true:
+                  arguments:
+                    expression: " >= -180 AND longitude <= 180"
+
+          - name: latitude
+            description: "Geographic latitude"
+            data_tests:
+              - not_null
+              - dbt_utils.expression_is_true:
+                  arguments:
+                    expression: " >= -90 AND latitude <= 90"
+
+          - name: geo_grid_id
+            description: "Geographic grid identifier"
+            data_tests:
+              - not_null
+
+          - name: phone
+            description: "Contact phone numbers; may contain multiple values or empty arrays"
+
+          - name: address
+            description: "Physical address of the POI"
+
+          - name: _source_file
+            description: "Original S3 source file path"
+            data_tests:
+              - not_null
+
+          - name: _ingest_at
+            description: "Timestamp when the record was ingested"
+            data_tests:
+              - not_null
+

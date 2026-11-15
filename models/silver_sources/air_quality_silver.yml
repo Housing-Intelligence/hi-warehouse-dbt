@@ -1,8 +1,7 @@
-
 version: 2
 
 sources:
-  - name: air_quality_union
+  - name: dim_data
     database: housing_intelligence
     schema: processed
 
@@ -18,7 +17,7 @@ sources:
                     severity: warn
               - accepted_values:
                   arguments:
-                    values: ['AQICN']
+                    values: ["AQICN", "OPEN_METEO"]
                   config:
                     severity: warn
 
@@ -30,7 +29,7 @@ sources:
                     severity: warn
               - accepted_values:
                   arguments:
-                    values: ['STATION']
+                    values: ["STATION"]
                   config:
                     severity: warn
 

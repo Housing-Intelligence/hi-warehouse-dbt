@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: gold_orders
+    config:
+      materialized: view

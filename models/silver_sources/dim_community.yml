@@ -1,0 +1,227 @@
+
+version: 2
+
+sources:
+  - name: dim_community
+    database: housing_intelligence
+    schema: processed
+
+    tables:
+      - name: dim_community
+        description: "Beijing residential community information, including geographic location, building attributes, property prices, amenities, and quality scores."
+
+        columns:
+          - name: ID
+            description: "City or source-level identifier"
+
+          - name: city_name
+            description: "City name"
+            data_tests:
+              - not_null
+
+          - name: city_name_month
+            description: "City name or monthly city identifier"
+
+          - name: community_id
+            description: "Unique residential community identifier"
+            data_tests:
+              - not_null
+              - unique
+
+          - name: community_name
+            description: "Residential community name"
+            data_tests:
+              - not_null
+
+          - name: subdistrict_id
+            description: "Administrative subdistrict identifier"
+
+          - name: subdistrict
+            description: "Administrative subdistrict"
+            data_tests:
+              - not_null
+
+          - name: biz_area_id
+            description: "Business area identifier"
+
+          - name: business_area
+            description: "Business district name"
+
+          - name: address
+            description: "Community address"
+
+          - name: longitude
+            description: "Geographic longitude"
+            data_tests:
+              - not_null
+              - dbt_utils.expression_is_true:
+                  arguments:
+                    expression: "longitude >= -180 AND longitude <= 180"
+
+          - name: latitude
+            description: "Geographic latitude"
+            data_tests:
+              - not_null
+              - dbt_utils.expression_is_true:
+                  arguments:
+                    expression: "latitude >= -90 AND latitude <= 90"
+
+          - name: cover_image
+            description: "Community cover image URL"
+
+          - name: building_type
+            description: "Building height or structure category"
+
+          - name: ownership_type
+            description: "Property ownership type"
+
+          - name: completion_year
+            description: "Year when the community was completed"
+
+          - name: property_type
+            description: "Residential property type"
+
+          - name: near_metro
+            description: "Indicates whether the community is near a metro station"
+            data_tests:
+              - accepted_values:
+                  arguments:
+                    values: [0, 1]
+
+          - name: near_school
+            description: "Indicates whether the community is near a school"
+            data_tests:
+              - accepted_values:
+                  arguments:
+                    values: [0, 1]
+
+          - name: panorama
+            description: "Panorama availability indicator"
+
+          - name: has_elevator
+            description: "Indicates whether the building has an elevator"
+            data_tests:
+              - accepted_values:
+                  arguments:
+                    values: [0, 1]
+
+          - name: for_sale_units
+            description: "Number of units currently listed for sale"
+
+          - name: for_rent_units
+            description: "Number of units currently listed for rent"
+
+          - name: pinyin
+            description: "Community name in Pinyin"
+
+          - name: col_1
+            description: "Unmapped source attribute"
+
+          - name: green_rate
+            description: "Community green space ratio"
+
+          - name: total_households
+            description: "Total number of households"
+
+          - name: "1"
+            description: "Unmapped source column; verify original column name"
+
+          - name: total_area
+            description: "Total community area"
+
+          - name: heating
+            description: "Heating information"
+
+          - name: water_supply
+            description: "Water supply information"
+
+          - name: col_2
+            description: "Unmapped source attribute"
+
+          - name: col_3
+            description: "Unmapped source attribute"
+
+          - name: avg_price
+            description: "Average community property price"
+
+          - name: building_quality_score
+            description: "Building quality score"
+
+          - name: environment_score
+            description: "Environmental quality score"
+
+          - name: commerce_score
+            description: "Commercial amenities score"
+
+          - name: education_score
+            description: "Education resources score"
+
+          - name: popularity_score
+            description: "Community popularity score"
+
+          - name: user_score
+            description: "User evaluation score"
+
+          - name: transport_score
+            description: "Transportation convenience score"
+
+          - name: col_4
+            description: "Unmapped source attribute"
+
+          - name: living_score
+            description: "Overall living score"
+
+          - name: living_quality_score
+            description: "Living quality score or source-provided attribute; verify data type"
+
+          - name: building_quality_tags
+            description: "Building quality descriptive tags"
+
+          - name: environment_tags
+            description: "Environmental descriptive tags"
+
+          - name: popularity_tags
+            description: "Popularity descriptive tags"
+
+          - name: user_score_tags
+            description: "User evaluation descriptive tags"
+
+          - name: _source_file
+            description: "Original source file path"
+            data_tests:
+              - not_null
+
+          - name: _ingested_at
+            description: "Timestamp when the record was ingested"
+            data_tests:
+              - not_null
+
+          - name: grid_lat
+            description: "Latitude component of geographic grid"
+
+          - name: grid_lng
+            description: "Longitude component of geographic grid"
+
+          - name: geo_grid_id
+            description: "Geographic grid identifier"
+
+          - name: description
+            description: "Detailed community description"
+
+          - name: property_service
+            description: "Property management service information"
+
+          - name: pros
+            description: "Community advantages"
+
+          - name: cons
+            description: "Community disadvantages"
+
+          - name: commerce_tags
+            description: "Commercial amenities tags"
+
+          - name: education_tags
+            description: "Education resources tags"
+
+          - name: transport_tags
+            description: "Transportation information tags"

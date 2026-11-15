@@ -1,7 +1,6 @@
 {% test assert_non_negative(model, column_name) %}
 
-    SELECT 
-    *
+    SELECT *
     FROM {{ model }}
     WHERE {{ column_name }} < 0
 
