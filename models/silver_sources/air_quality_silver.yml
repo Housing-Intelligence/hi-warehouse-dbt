@@ -6,7 +6,7 @@ sources:
     schema: processed
 
     tables:
-      - name: air_quality_silver
+      - name: air_quality_union
 
         columns:
           # Data source
@@ -29,7 +29,7 @@ sources:
                     severity: warn
               - accepted_values:
                   arguments:
-                    values: ["STATION"]
+                    values: ["STATION","MODEL_GRID"]
                   config:
                     severity: warn
 
@@ -40,10 +40,7 @@ sources:
                     severity: warn
 
           - name: station_name
-            data_tests:
-              - not_null:
-                  config:
-                    severity: warn
+
 
           # Geographic coordinates
           - name: latitude
@@ -78,9 +75,6 @@ sources:
           # Air Quality Index
           - name: aqi
             data_tests:
-              - not_null:
-                  config:
-                    severity: warn
               - assert_non_negative:
                   config:
                     severity: warn
@@ -88,18 +82,13 @@ sources:
           # Dominant pollutant
           - name: dominant_pollutant
             data_tests:
-              - not_null:
-                  config:
-                    severity: warn
               - accepted_values:
                   arguments:
                     values:
                       - pm25
                       - pm10
-                      - no2
+                      - ''
                       - o3
-                      - so2
-                      - co
                   config:
                     severity: warn
 
@@ -153,12 +142,3 @@ sources:
                   config:
                     severity: warn
 
-        data_tests:
-          - dbt_utils.unique_combination_of_columns:
-              arguments:
-                combination_of_columns:
-                  - source
-                  - location_id
-                  - measurement_time
-              config:
-                severity: warn

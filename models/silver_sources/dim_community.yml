@@ -2,12 +2,12 @@
 version: 2
 
 sources:
-  - name: dim_community
+  - name: dim_data
     database: housing_intelligence
     schema: processed
 
     tables:
-      - name: dim_community
+      - name: community_transform
         description: "Beijing residential community information, including geographic location, building attributes, property prices, amenities, and quality scores."
 
         columns:
@@ -56,7 +56,7 @@ sources:
               - not_null
               - dbt_utils.expression_is_true:
                   arguments:
-                    expression: "longitude >= -180 AND longitude <= 180"
+                    expression: " >= -180 AND longitude <= 180"
 
           - name: latitude
             description: "Geographic latitude"
@@ -64,7 +64,7 @@ sources:
               - not_null
               - dbt_utils.expression_is_true:
                   arguments:
-                    expression: "latitude >= -90 AND latitude <= 90"
+                    expression: " >= -90 AND latitude <= 90"
 
           - name: cover_image
             description: "Community cover image URL"
