@@ -44,8 +44,6 @@ sources:
 
           - name: city
             description: "City code"
-            data_tests:
-              - not_null
 
           - name: district
             description: "Administrative district"

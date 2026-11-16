@@ -1,0 +1,245 @@
+major_category,middle_category,semantic_group,search_relevance,relevance_weight,impact_type,is_core_category,mapping_note
+Accommodation Services,Accommodation Services,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Accommodation Services,Resort & Rehabilitation Center,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Accommodation Services,Guesthouse & Hostel,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Accommodation Services,Hotel,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,FAW Jiefang Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Great Wall Motors Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Porsche Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Jaguar Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Repair Station,INDUSTRIAL_NUISANCE,True,0.5,NEGATIVE,False,Residential relevance mapped to a semantic group
+Automotive Repair,Chery Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,BMW Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Subaru Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Foton Truck Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Toyota Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,North-Benz Heavy Truck Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Ford Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,BAIC Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Peugeot-Citroën Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,GAC Trumpchi Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,JAC Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Mercedes-Benz Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Dongfeng Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,JAC Truck Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,GM Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Mitsubishi Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Geely Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Ferrari Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Truck Repair,INDUSTRIAL_NUISANCE,True,0.8,NEGATIVE,True,Residential relevance mapped to a semantic group
+Automotive Repair,Changan Automobile Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Hyundai Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Comprehensive Auto Repair,INDUSTRIAL_NUISANCE,True,0.7,NEGATIVE,True,Residential relevance mapped to a semantic group
+Automotive Repair,Audi Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Honda Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Haima Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Land Rover Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Automotive Repair,INDUSTRIAL_NUISANCE,True,0.6,NEGATIVE,False,Residential relevance mapped to a semantic group
+Automotive Repair,Nissan Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Sinotruk Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Roewe Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Volkswagen Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Repair,Kia Authorized Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Hualing Xingma Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Chrysler Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Great Wall Motors Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Hyundai Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,BMW Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Roewe Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,FAW Jiefang Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,BAIC Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Truck Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Foton Truck Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Automotive Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Shacman Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Kia Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Hongqi Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,JAC Truck Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Geely Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Used Car Trading,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Mitsubishi Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Porsche Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Nissan Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Dongfeng Truck Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Qoros Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Audi Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Subaru Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Volkswagen Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Sinotruk Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Toyota Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Changan Automobile Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,JAC Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Fiat Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,GAC Trumpchi Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Chery Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Honda Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Jaguar Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Mercedes-Benz Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Renault Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Land Rover Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Ferrari Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Peugeot-Citroën Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Haima Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,GM Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Volvo Trucks Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Ford Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,Dongfeng Authorized Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Sales,MG Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Services,Other Energy Station,INDUSTRIAL_NUISANCE,True,0.5,NEGATIVE,False,Residential relevance mapped to a semantic group
+Automotive Services,CNG/LPG Station,INDUSTRIAL_NUISANCE,True,0.6,NEGATIVE,False,Residential relevance mapped to a semantic group
+Automotive Services,Car Wash,INDUSTRIAL_NUISANCE,True,0.3,NEUTRAL,False,Residential relevance mapped to a semantic group
+Automotive Services,Battery Swapping Station,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Services,Auto Parts Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Services,Automotive Services,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Services,Automobile Club,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Services,Roadside Assistance,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Services,Car Maintenance & Accessories,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Services,EV Charging Station,TRANSPORTATION,True,0.7,POSITIVE,True,Residential relevance mapped to a semantic group
+Automotive Services,Car Rental,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Automotive Services,Gas Station,INDUSTRIAL_NUISANCE,True,0.6,NEGATIVE,False,Residential relevance mapped to a semantic group
+Business & Residential,Building,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Business & Residential,Business & Residential Services,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Business & Residential,Industrial Park,INDUSTRIAL_NUISANCE,True,1.0,NEGATIVE,True,Residential relevance mapped to a semantic group
+Business & Residential,Residential Area,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Companies & Enterprises,Factory,INDUSTRIAL_NUISANCE,True,1.0,NEGATIVE,True,Residential relevance mapped to a semantic group
+Companies & Enterprises,Company,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Companies & Enterprises,Well-known Enterprise,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Companies & Enterprises,"Agriculture, Forestry, Animal Husbandry & Fishery Base",INDUSTRIAL_NUISANCE,True,0.5,NEUTRAL,False,Residential relevance mapped to a semantic group
+Companies & Enterprises,Company & Enterprise,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+"Education, Science & Culture Services",Scientific Research Institution,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+"Education, Science & Culture Services",Planetarium,RECREATION,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+"Education, Science & Culture Services",Archives,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+"Education, Science & Culture Services",Museum,RECREATION,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+"Education, Science & Culture Services",Library,EDUCATION,True,0.8,POSITIVE,True,Residential relevance mapped to a semantic group
+"Education, Science & Culture Services","Education, Science & Culture Venue",OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+"Education, Science & Culture Services",School,EDUCATION,True,1.0,POSITIVE,True,Residential relevance mapped to a semantic group
+"Education, Science & Culture Services",Media Organization,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+"Education, Science & Culture Services",Exhibition Hall,RECREATION,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+"Education, Science & Culture Services",Training Institution,EDUCATION,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+"Education, Science & Culture Services",Science & Technology Museum,RECREATION,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+"Education, Science & Culture Services",Cultural Palace,EDUCATION,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+"Education, Science & Culture Services",Art Museum,RECREATION,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Events & Activities,Event & Activity,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Events & Activities,Public Activity,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Events & Activities,Convention & Exhibition Center,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Financial & Insurance Services,Bank,DAILY_CONVENIENCE,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Financial & Insurance Services,Insurance Company,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Financial & Insurance Services,Financial & Insurance Institution,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Financial & Insurance Services,Securities Company,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Financial & Insurance Services,Banking Services,DAILY_CONVENIENCE,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Financial & Insurance Services,Finance Company,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Financial & Insurance Services,ATM,DAILY_CONVENIENCE,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Food & Beverage Services,Café,DAILY_CONVENIENCE,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Food & Beverage Services,Cold Beverage Shop,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Food & Beverage Services,Dessert Shop,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Food & Beverage Services,Foreign Cuisine Restaurant,DAILY_CONVENIENCE,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Food & Beverage Services,Food & Beverage-related Venue,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Food & Beverage Services,Bakery & Pastry Shop,DAILY_CONVENIENCE,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Food & Beverage Services,Tea House,DAILY_CONVENIENCE,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+Food & Beverage Services,Casual Dining Venue,DAILY_CONVENIENCE,True,0.6,POSITIVE,False,Residential relevance mapped to a semantic group
+Food & Beverage Services,Fast Food Restaurant,DAILY_CONVENIENCE,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Food & Beverage Services,Chinese Restaurant,DAILY_CONVENIENCE,True,0.6,POSITIVE,False,Residential relevance mapped to a semantic group
+Government Institutions & Social Organizations,Social Organization,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Government Institutions & Social Organizations,Democratic Party Organization,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Government Institutions & Social Organizations,Government Agency,PUBLIC_SERVICES,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Government Institutions & Social Organizations,"Public Security, Procuratorate & Court",PUBLIC_SERVICES,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Government Institutions & Social Organizations,Arts & Cultural Organization,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Government Institutions & Social Organizations,Foreign Organization,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Government Institutions & Social Organizations,"Industry, Commerce & Taxation Institution",OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Government Institutions & Social Organizations,Government & Social Organizations,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Indoor Facilities,Indoor Facilities,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Electricity Service Center,PUBLIC_SERVICES,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+Life Services,Driving School,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Water Utility Service Center,PUBLIC_SERVICES,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+Life Services,Newspaper Stand,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Moving Company,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Agency,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Telecom Service Center,PUBLIC_SERVICES,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+Life Services,Ticket Office,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Logistics & Express Delivery,DAILY_CONVENIENCE,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Life Services,Travel Agency,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Post Office,DAILY_CONVENIENCE,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Life Services,Job Market,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Photography & Photo Printing Shop,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Life Service Venue,PUBLIC_SERVICES,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Life Services,Office,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Information & Consultation Center,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Laundry,DAILY_CONVENIENCE,True,0.7,POSITIVE,True,Residential relevance mapped to a semantic group
+Life Services,Bath & Massage Venue,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Lottery Sales Point,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Infant & Baby Services,EDUCATION,True,0.8,POSITIVE,True,Residential relevance mapped to a semantic group
+Life Services,Funeral Facilities,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Life Services,Beauty & Hair Salon,DAILY_CONVENIENCE,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+Medical & Healthcare Services,Medical & Healthcare Service Venue,HEALTHCARE,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Medical & Healthcare Services,General Hospital,HEALTHCARE,True,1.0,POSITIVE,True,Residential relevance mapped to a semantic group
+Medical & Healthcare Services,Nucleic Acid Testing,HEALTHCARE,True,0.2,NEUTRAL,False,Residential relevance mapped to a semantic group
+Medical & Healthcare Services,Disease Prevention Institution,HEALTHCARE,True,0.6,POSITIVE,False,Residential relevance mapped to a semantic group
+Medical & Healthcare Services,Emergency Medical Center,HEALTHCARE,True,1.0,POSITIVE,True,Residential relevance mapped to a semantic group
+Medical & Healthcare Services,Clinic,HEALTHCARE,True,0.8,POSITIVE,True,Residential relevance mapped to a semantic group
+Medical & Healthcare Services,Veterinary Clinic,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Medical & Healthcare Services,Specialized Hospital,HEALTHCARE,True,0.9,POSITIVE,True,Residential relevance mapped to a semantic group
+Motorcycle Services,Motorcycle Sales,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Motorcycle Services,Motorcycle Repair,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Motorcycle Services,Motorcycle Services,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Passage Facilities,Building Entrance,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Passage Facilities,Street-facing Courtyard Gate,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Passage Facilities,Special Passage,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Passage Facilities,Passage Facility,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Place Names & Address Information,Natural Place Name,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Place Names & Address Information,City Center,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Place Names & Address Information,Address Plate Information,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Place Names & Address Information,Transportation Place Name,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Place Names & Address Information,Place Names & Address Information,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Place Names & Address Information,Popular Place Name,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Place Names & Address Information,General Place Name,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Public Facilities,Shared Equipment,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Public Facilities,Public Restroom,PUBLIC_SERVICES,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Public Facilities,Public Facility,PUBLIC_SERVICES,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Public Facilities,Emergency Shelter,PUBLIC_SERVICES,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Public Facilities,Public Telephone,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Road Auxiliary Facilities,Road Sign Information,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Road Auxiliary Facilities,Warning Information,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Road Auxiliary Facilities,Road Auxiliary Facility,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Scenic Attractions,Scenic Attraction,RECREATION,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Scenic Attractions,Scenic Attraction-related,RECREATION,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+Scenic Attractions,Park & Square,RECREATION,True,1.0,POSITIVE,True,Residential relevance mapped to a semantic group
+Shopping Services,Sporting Goods Store,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Shopping Services,"Clothing, Footwear & Leather Goods Store",OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Shopping Services,Personal Care & Cosmetics Store,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Shopping Services,"Flower, Bird, Fish & Pet Market",OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Shopping Services,Home Appliance & Electronics Store,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Shopping Services,Specialty Trading Venue,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Shopping Services,Shopping Mall,DAILY_CONVENIENCE,True,0.8,POSITIVE,True,Residential relevance mapped to a semantic group
+Shopping Services,Pharmaceutical & Healthcare Store,DAILY_CONVENIENCE,True,0.7,POSITIVE,True,Residential relevance mapped to a semantic group
+Shopping Services,Specialty Store,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Shopping Services,Cultural & Stationery Store,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Shopping Services,Supermarket,DAILY_CONVENIENCE,True,1.0,POSITIVE,True,Residential relevance mapped to a semantic group
+Shopping Services,General Market,DAILY_CONVENIENCE,True,0.8,POSITIVE,True,Residential relevance mapped to a semantic group
+Shopping Services,Convenience Store,DAILY_CONVENIENCE,True,0.9,POSITIVE,True,Residential relevance mapped to a semantic group
+Shopping Services,Shopping-related Venue,DAILY_CONVENIENCE,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Shopping Services,Themed Commercial Street,DAILY_CONVENIENCE,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Shopping Services,Home Furnishing & Building Materials Market,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Sports & Recreation Services,Golf-related Services,RECREATION,True,0.2,POSITIVE,False,Residential relevance mapped to a semantic group
+Sports & Recreation Services,Sports & Recreation Venue,RECREATION,True,0.8,POSITIVE,True,Residential relevance mapped to a semantic group
+Sports & Recreation Services,Sports Venue,RECREATION,True,0.8,POSITIVE,True,Residential relevance mapped to a semantic group
+Sports & Recreation Services,Entertainment Venue,RECREATION,True,0.3,POSITIVE,False,Residential relevance mapped to a semantic group
+Sports & Recreation Services,Cinema & Theater,RECREATION,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Sports & Recreation Services,Recreation Venue,RECREATION,True,0.6,POSITIVE,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Parking Lot,TRANSPORTATION,True,0.7,POSITIVE,True,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Taxi,TRANSPORTATION,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Metro Station,TRANSPORTATION,True,1.0,POSITIVE,True,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Passenger Pickup & Drop-off Area,TRANSPORTATION,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Ferry Terminal,TRANSPORTATION,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Transportation Services,TRANSPORTATION,True,0.4,POSITIVE,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Bus Stop,TRANSPORTATION,True,0.9,POSITIVE,True,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Vehicle Management,TRANSPORTATION,True,0.2,NEUTRAL,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Shuttle Bus Stop,TRANSPORTATION,True,0.6,POSITIVE,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Long-distance Bus Station,TRANSPORTATION,True,0.5,POSITIVE,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Airport Services,TRANSPORTATION,True,0.3,NEUTRAL,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Service Area,TRANSPORTATION,True,0.2,NEUTRAL,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Railway Station,TRANSPORTATION,True,0.7,POSITIVE,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Port & Terminal,TRANSPORTATION,True,0.2,NEUTRAL,False,Residential relevance mapped to a semantic group
+Transportation Facilities & Services,Toll Station,TRANSPORTATION,True,0.1,NEUTRAL,False,Residential relevance mapped to a semantic group
+Virtual Data,Virtual Entrance,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Virtual Data,Virtual Data,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
+Virtual Data,Virtual Store,OTHER_EXCLUDED,False,0.0,NEUTRAL,False,Not included in the initial residential semantic search scope
