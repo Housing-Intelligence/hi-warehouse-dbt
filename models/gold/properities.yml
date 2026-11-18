@@ -1,6 +1,135 @@
+
 version: 2
 
 models:
-  - name: gold_orders
-    config:
-      materialized: view
+  - name: int_community_poi
+    description: >
+      Intermediate spatial association model linking residential communities
+      to nearby POIs within a 3 km radius. Includes POI category hierarchy,
+      semantic classification, geographic distance and distance bands.
+
+    columns:
+
+      # Community identifiers
+      - name: community_id
+        description: Unique identifier of the residential community.
+        data_tests:
+          - not_null
+
+      - name: community_name
+        description: Name of the residential community.
+
+      - name: city_name
+        description: City where the community is located.
+
+      - name: subdistrict
+        description: Subdistrict of the community.
+
+      - name: business_area
+        description: Business area associated with the community.
+
+      # Community geographic attributes
+      - name: community_longitude
+        description: Longitude of the community.
+
+      - name: community_latitude
+        description: Latitude of the community.
+
+      # Community scores
+      - name: avg_price
+        description: Average property price of the community.
+
+      - name: living_quality_score
+        description: Overall living quality score.
+
+      - name: environment_score
+        description: Environmental quality score.
+
+      - name: commerce_score
+        description: Commercial convenience score.
+
+      - name: education_score
+        description: Education score.
+
+      - name: transport_score
+        description: Transportation score.
+
+      # POI identifiers
+      - name: source_poi_id
+        description: Unique identifier of the POI from the original data source.
+        data_tests:
+          - not_null
+
+      - name: poi_name
+        description: Name of the point of interest.
+
+      # POI category hierarchy
+      - name: major_category
+        description: First-level POI category.
+
+      - name: middle_category
+        description: Second-level POI category.
+
+      - name: minor_category
+        description: Third-level POI category.
+
+      # POI geographic attributes
+      - name: poi_longitude
+        description: Longitude of the POI.
+
+      - name: poi_latitude
+        description: Latitude of the POI.
+
+      - name: poi_address
+        description: Address of the POI.
+
+      # Semantic mapping attributes
+      - name: semantic_group
+        description: >
+          Semantic category assigned to the POI using the category mapping seed.
+          Examples include EDUCATION, HEALTHCARE and TRANSPORTATION.
+        data_tests:
+          - not_null
+
+      - name: search_relevance
+        description: Indicates whether the POI is relevant to residential semantic search.
+
+      - name: relevance_weight
+        description: Business-defined relevance weight assigned to the POI.
+
+      - name: impact_type
+        description: >
+          Classification of the POI impact, such as positive, negative or neutral.
+
+      - name: is_core_category
+        description: Indicates whether the POI belongs to a core category.
+
+      - name: mapping_note
+        description: Explanation of the category mapping.
+
+      # Distance
+      - name: distance_m
+        description: >
+          Haversine distance between the community and POI in meters.
+        data_tests:
+          - not_null
+
+      - name: distance_band
+        description: Distance band of the POI relative to the community.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - 0_500M
+                  - 500M_1KM
+                  - 1KM_3KM
+
+      - name: within_500m
+        description: Indicates whether the POI is within 500 meters.
+
+      - name: within_1km
+        description: Indicates whether the POI is within 1 kilometer.
+
+      - name: within_3km
+        description: Indicates whether the POI is within 3 kilometers.
