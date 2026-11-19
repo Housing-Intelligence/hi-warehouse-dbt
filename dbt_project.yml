@@ -38,3 +38,11 @@ seeds:
   dbt_databricks_hi:
     +schema: seeds
     +quote_columns: false
+  
+    aqicn_station_locations:
+      +schema: seed
+      +column_types:
+        station_id: STRING
+        station_name: STRING
+        latitude: DOUBLE
+        longitude: DOUBLE

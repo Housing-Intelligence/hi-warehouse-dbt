@@ -1,3 +1,4 @@
+
 {{ config(
     materialized='table',
     schema='gold_intermediate'
@@ -6,49 +7,46 @@
 WITH poi_mapped AS (
 
     SELECT
-        p.*,
+        p.source_poi_id,
+        p.poi_name,
+        p.major_category,
+        p.middle_category,
 
-        COALESCE(m.semantic_group, 'OTHER_EXCLUDED')
-            AS semantic_group,
+        -- Use English minor category name
+        f.minor_category_en AS minor_category,
 
-        COALESCE(m.search_relevance, false)
-            AS search_relevance,
+        p.longitude,
+        p.latitude,
+        p.address,
 
-        COALESCE(m.relevance_weight, 0)
-            AS relevance_weight,
-
-        COALESCE(m.impact_type, 'NEUTRAL')
-            AS impact_type,
-
-        COALESCE(m.is_core_category, false)
-            AS is_core_category,
-
-        m.mapping_note
+        -- Semantic attributes from the new minor-category seed
+        f.semantic_group,
+        f.search_relevance,
+        f.relevance_weight,
+        f.impact_type,
+        f.is_core_category,
+        -- Minor-category-specific semantic description for RAG
+        f.poi_semantic_description
 
     FROM {{ source('dim_data', 'dim_poi') }} p
 
-    LEFT JOIN {{ ref('poi_semantic_category_mapping') }} m
-        ON p.major_category = m.major_category
-        AND p.middle_category = m.middle_category
-
+    -- Single source for filtering and semantic mapping
+    INNER JOIN {{ ref('poi_minor_category_filter_seed_rag') }} f
+        ON p.major_category = f.major_category
+        AND p.middle_category = f.middle_category
+        AND p.minor_category = f.minor_category
+        AND f.keep_minor_category = true
+        AND f.search_relevance = true
 ),
 
 candidate_pairs AS (
-
     SELECT
         -- Community attributes
         c.community_id,
         c.community_name,
-        c.subdistrict,
-        c.business_area,
         c.longitude AS community_longitude,
         c.latitude AS community_latitude,
-        c.avg_price,
-        c.living_quality_score,
-        c.environment_score,
-        c.commerce_score,
-        c.education_score,
-        c.transport_score,
+        -- POI attributes
         p.source_poi_id,
         p.poi_name,
         p.major_category,
@@ -56,14 +54,11 @@ candidate_pairs AS (
         p.minor_category,
         p.longitude AS poi_longitude,
         p.latitude AS poi_latitude,
-        p.address AS poi_address,
+        -- Semantic attributes
         p.semantic_group,
-        p.search_relevance,
         p.relevance_weight,
         p.impact_type,
-        p.is_core_category,
-        p.mapping_note,
-
+        p.poi_semantic_description,
         -- Haversine distance in meters
         {{ calculate_distance_meters(
             'c.latitude',
@@ -75,7 +70,6 @@ candidate_pairs AS (
     FROM {{ source('dim_data', 'community_transform') }} c
 
     INNER JOIN poi_mapped p
-
         ON p.latitude BETWEEN
             c.latitude - (3000 / 111320.0)
             AND c.latitude + (3000 / 111320.0)
@@ -105,7 +99,6 @@ SELECT *,
         WHEN distance_m <= 1000 THEN '500M_1KM'
         WHEN distance_m <= 3000 THEN '1KM_3KM'
     END AS distance_band,
-
     distance_m <= 500 AS within_500m,
     distance_m <= 1000 AS within_1km,
     distance_m <= 3000 AS within_3km
